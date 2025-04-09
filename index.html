@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | My Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <button id="themeToggle">Switch Theme</button>
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><span id="clock" style="font-weight: bold; font-size: 1.2rem;"></span></li>
             </ul>
         </nav>
     </header>
@@ -33,8 +36,22 @@
         </aside>
     </main>
 
+    <div class="faq-item">
+        <h3 class="question">What is this website about?</h3>
+        <p class="answer">This is a demo project for learning web development.</p>
+        </div>
+     
+        <div class="slider">
+            <img id="sliderImage" src="images/image1.jpg" alt="Slider Image" />
+          </div>    
+
+    <button id="backToTop">↑ Back to Top</button>
+
     <footer>
         <p>&copy; 2025 My Website. All Rights Reserved.</p>
     </footer>
 </body>
+
+
+
 </html>
