@@ -1,57 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | My Website</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | My Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <button id="themeToggle">Switch Theme</button>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><span id="clock" style="font-weight: bold; font-size: 1.2rem;"></span></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Theme Toggle -->
+  <button id="themeToggle">Switch Theme</button>
 
-    <section class="hero">
-        <h1>Welcome to Our Website</h1>
-        <p>Providing quality services for your needs.</p>
+  <!-- Header with Clock -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><span id="clock" style="font-weight: bold; font-size: 1.2rem;"></span></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Our Website</h1>
+    <p>Providing quality services for your needs.</p>
+  </section>
+
+  <!-- Main Content -->
+  <main class="home-content">
+    <section class="intro">
+      <h2>About Us</h2>
+      <p>We specialize in providing top-notch solutions for businesses and individuals.</p>
     </section>
 
-    <main class="home-content">
-        <section class="intro">
-            <h2>About Us</h2>
-            <p>We specialize in providing top-notch solutions for businesses and individuals.</p>
-        </section>
-        <aside class="sidebar">
-            <h2>Latest News</h2>
-            <p>Check out our latest updates and offers.</p>
-        </aside>
-    </main>
+    <aside class="sidebar">
+      <h2>Latest News</h2>
+      <p>Check out our latest updates and offers.</p>
+    </aside>
+  </main>
 
+  <!-- FAQ Section -->
+  <section class="faq-section">
     <div class="faq-item">
-        <h3 class="question">What is this website about?</h3>
-        <p class="answer">This is a demo project for learning web development.</p>
-        </div>
-     
-        <div class="slider">
-            <img id="sliderImage" src="images/image1.jpg" alt="Slider Image" />
-          </div>    
+      <h3 class="question">What is this website about?</h3>
+      <p class="answer">This is a demo project for learning web development.</p>
+    </div>
+  </section>
 
-    <button id="backToTop">↑ Back to Top</button>
+  <!-- Image Slider -->
+  <div class="slider">
+    <img id="sliderImage" src="images/image1.jpg" alt="Slider Image" />
+  </div>
 
-    <footer>
-        <p>&copy; 2025 My Website. All Rights Reserved.</p>
-    </footer>
+  <!-- Fetch API Section -->
+  <section>
+    <h2>Team Members</h2>
+    <ul id="userList"></ul>
+    <button id="loadUsersBtn">Load Users</button>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" style="display: none;">↑ Back to Top</button>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Website. All Rights Reserved.</p>
+  </footer>
 </body>
-
-
-
 </html>
+
